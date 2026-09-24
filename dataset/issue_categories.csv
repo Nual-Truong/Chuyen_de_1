@@ -1,0 +1,7 @@
+category_id,category_name,default_priority,is_active
+1,MAN_HINH,CAO,true
+2,PIN,TRUNG_BINH,true
+3,SAC,TRUNG_BINH,true
+4,PHAN_MEM,THAP,true
+5,NUOC_VAO,CAO,true
+6,KHAC,TRUNG_BINH,true

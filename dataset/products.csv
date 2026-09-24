@@ -1,0 +1,321 @@
+product_id,product_code,product_name,thuong_hieu,nhom_san_pham,gia_niem_yet,warranty_months
+1,SS0001,Samsung Y2,Samsung,Điện thoại phổ thông,1890000,12
+2,SS0002,Samsung Pro Max 14,Samsung,Điện thoại cao cấp,36990000,12
+3,SS0003,Samsung Tai nghe A8,Samsung,Phụ kiện,590000,6
+4,SS0004,Samsung Pin dự phòng A9,Samsung,Phụ kiện,320000,6
+5,SS0005,Samsung Plus 13,Samsung,Điện thoại tầm trung,7990000,12
+6,SS0006,Samsung Tab A11,Samsung,Máy tính bảng,5990000,12
+7,SS0007,Samsung Plus 14,Samsung,Điện thoại tầm trung,6490000,12
+8,SS0008,Samsung Y3,Samsung,Điện thoại phổ thông,1890000,12
+9,SS0009,Samsung Sạc nhanh Pro7,Samsung,Phụ kiện,320000,6
+10,SS0010,Samsung Neo 11,Samsung,Điện thoại tầm trung,6490000,12
+11,SS0011,Samsung Ultra 13,Samsung,Điện thoại cao cấp,36990000,12
+12,SS0012,Samsung Pro Max 13,Samsung,Điện thoại cao cấp,27990000,12
+13,SS0013,Samsung Pro Max 14,Samsung,Điện thoại cao cấp,27990000,12
+14,SS0014,Samsung Pin dự phòng A4,Samsung,Phụ kiện,250000,6
+15,SS0015,Samsung S 14,Samsung,Điện thoại tầm trung,4990000,12
+16,SS0016,Samsung Pro Max 14,Samsung,Điện thoại cao cấp,27990000,12
+17,SS0017,Samsung Sạc nhanh B5,Samsung,Phụ kiện,320000,6
+18,SS0018,Samsung Neo 13,Samsung,Điện thoại tầm trung,9490000,12
+19,SS0019,Samsung Plus 14,Samsung,Điện thoại tầm trung,11990000,12
+20,SS0020,Samsung Tab M8,Samsung,Máy tính bảng,4590000,12
+21,SS0021,Samsung Note 13,Samsung,Điện thoại tầm trung,7990000,12
+22,SS0022,Samsung S 10,Samsung,Điện thoại tầm trung,4990000,12
+23,SS0023,Samsung Ultra 14,Samsung,Điện thoại cao cấp,36990000,12
+24,SS0024,Samsung Plus 11,Samsung,Điện thoại tầm trung,6490000,12
+25,SS0025,Samsung Y9,Samsung,Điện thoại phổ thông,3490000,12
+26,SS0026,Samsung Ultra 16,Samsung,Điện thoại cao cấp,31990000,12
+27,SS0027,Samsung Tab A5,Samsung,Máy tính bảng,12990000,12
+28,SS0028,Samsung Tab S7,Samsung,Máy tính bảng,4590000,12
+29,SS0029,Samsung Ốp lưng Lite8,Samsung,Phụ kiện,250000,6
+30,SS0030,Samsung Plus 11,Samsung,Điện thoại tầm trung,6490000,12
+31,SS0031,Samsung Plus 8,Samsung,Điện thoại tầm trung,6490000,12
+32,SS0032,Samsung Neo 9,Samsung,Điện thoại tầm trung,11990000,12
+33,SS0033,Samsung Sạc nhanh Lite7,Samsung,Phụ kiện,250000,6
+34,SS0034,Samsung Pro+ 13,Samsung,Điện thoại cao cấp,18990000,12
+35,SS0035,Samsung Note 13,Samsung,Điện thoại tầm trung,7990000,12
+36,SS0036,Samsung Cáp Type-C Pro5,Samsung,Phụ kiện,190000,6
+37,SS0037,Samsung Pin dự phòng B1,Samsung,Phụ kiện,120000,6
+38,SS0038,Samsung Note 8,Samsung,Điện thoại tầm trung,11990000,12
+39,SS0039,Samsung Pro+ 15,Samsung,Điện thoại cao cấp,31990000,12
+40,SS0040,Samsung Lite9,Samsung,Điện thoại phổ thông,1890000,12
+41,XM0041,Xiaomi Sạc nhanh B7,Xiaomi,Phụ kiện,190000,6
+42,XM0042,Xiaomi Plus 10,Xiaomi,Điện thoại tầm trung,9490000,12
+43,XM0043,Xiaomi Plus 10,Xiaomi,Điện thoại tầm trung,9490000,12
+44,XM0044,Xiaomi Lite3,Xiaomi,Điện thoại phổ thông,2990000,12
+45,XM0045,Xiaomi Plus 10,Xiaomi,Điện thoại tầm trung,9490000,12
+46,XM0046,Xiaomi S 14,Xiaomi,Điện thoại tầm trung,7990000,12
+47,XM0047,Xiaomi Note 13,Xiaomi,Điện thoại tầm trung,6490000,12
+48,XM0048,Xiaomi Neo 14,Xiaomi,Điện thoại tầm trung,6490000,12
+49,XM0049,Xiaomi Lite5,Xiaomi,Điện thoại phổ thông,2490000,12
+50,XM0050,Xiaomi Neo 14,Xiaomi,Điện thoại tầm trung,9490000,12
+51,XM0051,Xiaomi Tai nghe Lite6,Xiaomi,Phụ kiện,450000,6
+52,XM0052,Xiaomi Pin dự phòng B3,Xiaomi,Phụ kiện,190000,6
+53,XM0053,Xiaomi Note 14,Xiaomi,Điện thoại tầm trung,9490000,12
+54,XM0054,Xiaomi Tab A12,Xiaomi,Máy tính bảng,7490000,12
+55,XM0055,Xiaomi Tab A10,Xiaomi,Máy tính bảng,9990000,12
+56,XM0056,Xiaomi Neo 8,Xiaomi,Điện thoại tầm trung,6490000,12
+57,XM0057,Xiaomi Pro Max 12,Xiaomi,Điện thoại cao cấp,36990000,12
+58,XM0058,Xiaomi Tab S9,Xiaomi,Máy tính bảng,7490000,12
+59,XM0059,Xiaomi Neo 13,Xiaomi,Điện thoại tầm trung,4990000,12
+60,XM0060,Xiaomi Plus 8,Xiaomi,Điện thoại tầm trung,11990000,12
+61,XM0061,Xiaomi Pin dự phòng Lite9,Xiaomi,Phụ kiện,750000,6
+62,XM0062,Xiaomi Ultra 12,Xiaomi,Điện thoại cao cấp,27990000,12
+63,XM0063,Xiaomi Tab M8,Xiaomi,Máy tính bảng,5990000,12
+64,XM0064,Xiaomi Pro+ 14,Xiaomi,Điện thoại cao cấp,18990000,12
+65,XM0065,Xiaomi Ultra 15,Xiaomi,Điện thoại cao cấp,18990000,12
+66,XM0066,Xiaomi Pin dự phòng Pro2,Xiaomi,Phụ kiện,750000,6
+67,XM0067,Xiaomi Pro Max 12,Xiaomi,Điện thoại cao cấp,18990000,12
+68,XM0068,Xiaomi C9,Xiaomi,Điện thoại phổ thông,1890000,12
+69,XM0069,Xiaomi S 12,Xiaomi,Điện thoại tầm trung,4990000,12
+70,XM0070,Xiaomi Y3,Xiaomi,Điện thoại phổ thông,1890000,12
+71,XM0071,Xiaomi Plus 13,Xiaomi,Điện thoại tầm trung,11990000,12
+72,XM0072,Xiaomi S 11,Xiaomi,Điện thoại tầm trung,7990000,12
+73,XM0073,Xiaomi Plus 9,Xiaomi,Điện thoại tầm trung,11990000,12
+74,XM0074,Xiaomi Tab A12,Xiaomi,Máy tính bảng,5990000,12
+75,XM0075,Xiaomi S 9,Xiaomi,Điện thoại tầm trung,6490000,12
+76,XM0076,Xiaomi Ultra 16,Xiaomi,Điện thoại cao cấp,22990000,12
+77,XM0077,Xiaomi Cáp Type-C Lite1,Xiaomi,Phụ kiện,250000,6
+78,XM0078,Xiaomi Cáp Type-C A7,Xiaomi,Phụ kiện,450000,6
+79,XM0079,Xiaomi Cáp Type-C Pro5,Xiaomi,Phụ kiện,190000,6
+80,XM0080,Xiaomi Neo 13,Xiaomi,Điện thoại tầm trung,9490000,12
+81,OP0081,OPPO Note 13,OPPO,Điện thoại tầm trung,6490000,12
+82,OP0082,OPPO C9,OPPO,Điện thoại phổ thông,2490000,12
+83,OP0083,OPPO Ultra 16,OPPO,Điện thoại cao cấp,27990000,12
+84,OP0084,OPPO Neo 8,OPPO,Điện thoại tầm trung,9490000,12
+85,OP0085,OPPO Pro Max 13,OPPO,Điện thoại cao cấp,27990000,12
+86,OP0086,OPPO Pro Max 13,OPPO,Điện thoại cao cấp,18990000,12
+87,OP0087,OPPO Plus 14,OPPO,Điện thoại tầm trung,4990000,12
+88,OP0088,OPPO Plus 14,OPPO,Điện thoại tầm trung,7990000,12
+89,OP0089,OPPO Lite9,OPPO,Điện thoại phổ thông,3490000,12
+90,OP0090,OPPO Tai nghe A3,OPPO,Phụ kiện,450000,6
+91,OP0091,OPPO Neo 8,OPPO,Điện thoại tầm trung,4990000,12
+92,OP0092,OPPO Ốp lưng Lite6,OPPO,Phụ kiện,250000,6
+93,OP0093,OPPO Plus 10,OPPO,Điện thoại tầm trung,7990000,12
+94,OP0094,OPPO Tab S6,OPPO,Máy tính bảng,5990000,12
+95,OP0095,OPPO Note 13,OPPO,Điện thoại tầm trung,7990000,12
+96,OP0096,OPPO Go2,OPPO,Điện thoại phổ thông,2990000,12
+97,OP0097,OPPO Tab M11,OPPO,Máy tính bảng,4590000,12
+98,OP0098,OPPO Ultra 15,OPPO,Điện thoại cao cấp,36990000,12
+99,OP0099,OPPO Tab S11,OPPO,Máy tính bảng,12990000,12
+100,OP0100,OPPO Tab S9,OPPO,Máy tính bảng,9990000,12
+101,OP0101,OPPO Pro Max 14,OPPO,Điện thoại cao cấp,18990000,12
+102,OP0102,OPPO Lite6,OPPO,Điện thoại phổ thông,2490000,12
+103,OP0103,OPPO Pro+ 15,OPPO,Điện thoại cao cấp,22990000,12
+104,OP0104,OPPO Pro+ 12,OPPO,Điện thoại cao cấp,18990000,12
+105,OP0105,OPPO Neo 12,OPPO,Điện thoại tầm trung,9490000,12
+106,OP0106,OPPO Neo 8,OPPO,Điện thoại tầm trung,7990000,12
+107,OP0107,OPPO Cáp Type-C Pro9,OPPO,Phụ kiện,320000,6
+108,OP0108,OPPO Pro Max 12,OPPO,Điện thoại cao cấp,31990000,12
+109,OP0109,OPPO Tai nghe B1,OPPO,Phụ kiện,590000,6
+110,OP0110,OPPO Neo 14,OPPO,Điện thoại tầm trung,4990000,12
+111,OP0111,OPPO Tab M7,OPPO,Máy tính bảng,7490000,12
+112,OP0112,OPPO Pro Max 12,OPPO,Điện thoại cao cấp,27990000,12
+113,OP0113,OPPO Pro+ 14,OPPO,Điện thoại cao cấp,18990000,12
+114,OP0114,OPPO Ultra 11,OPPO,Điện thoại cao cấp,31990000,12
+115,OP0115,OPPO Pro Max 13,OPPO,Điện thoại cao cấp,31990000,12
+116,OP0116,OPPO Pro+ 16,OPPO,Điện thoại cao cấp,18990000,12
+117,OP0117,OPPO Note 13,OPPO,Điện thoại tầm trung,11990000,12
+118,OP0118,OPPO Ultra 15,OPPO,Điện thoại cao cấp,18990000,12
+119,OP0119,OPPO Pin dự phòng Lite2,OPPO,Phụ kiện,120000,6
+120,OP0120,OPPO Y9,OPPO,Điện thoại phổ thông,3490000,12
+121,RM0121,realme Tai nghe B2,realme,Phụ kiện,190000,6
+122,RM0122,realme Note 10,realme,Điện thoại tầm trung,4990000,12
+123,RM0123,realme Y3,realme,Điện thoại phổ thông,2490000,12
+124,RM0124,realme C3,realme,Điện thoại phổ thông,2990000,12
+125,RM0125,realme Neo 9,realme,Điện thoại tầm trung,6490000,12
+126,RM0126,realme Tab A10,realme,Máy tính bảng,5990000,12
+127,RM0127,realme Plus 10,realme,Điện thoại tầm trung,6490000,12
+128,RM0128,realme Sạc nhanh B6,realme,Phụ kiện,450000,6
+129,RM0129,realme Go5,realme,Điện thoại phổ thông,2990000,12
+130,RM0130,realme Tab A11,realme,Máy tính bảng,7490000,12
+131,RM0131,realme Ultra 11,realme,Điện thoại cao cấp,27990000,12
+132,RM0132,realme S 10,realme,Điện thoại tầm trung,4990000,12
+133,RM0133,realme Pro Max 13,realme,Điện thoại cao cấp,27990000,12
+134,RM0134,realme Neo 14,realme,Điện thoại tầm trung,6490000,12
+135,RM0135,realme Tab A6,realme,Máy tính bảng,5990000,12
+136,RM0136,realme Neo 10,realme,Điện thoại tầm trung,4990000,12
+137,RM0137,realme Y5,realme,Điện thoại phổ thông,3990000,12
+138,RM0138,realme Tab M8,realme,Máy tính bảng,7490000,12
+139,RM0139,realme S 14,realme,Điện thoại tầm trung,9490000,12
+140,RM0140,realme Plus 13,realme,Điện thoại tầm trung,4990000,12
+141,RM0141,realme Plus 9,realme,Điện thoại tầm trung,6490000,12
+142,RM0142,realme S 9,realme,Điện thoại tầm trung,9490000,12
+143,RM0143,realme Go5,realme,Điện thoại phổ thông,2490000,12
+144,RM0144,realme Plus 13,realme,Điện thoại tầm trung,4990000,12
+145,RM0145,realme Lite7,realme,Điện thoại phổ thông,2990000,12
+146,RM0146,realme Tab S6,realme,Máy tính bảng,5990000,12
+147,RM0147,realme Neo 8,realme,Điện thoại tầm trung,11990000,12
+148,RM0148,realme Tab A11,realme,Máy tính bảng,5990000,12
+149,RM0149,realme Pro Max 16,realme,Điện thoại cao cấp,31990000,12
+150,RM0150,realme Tab S8,realme,Máy tính bảng,12990000,12
+151,RM0151,realme Go8,realme,Điện thoại phổ thông,3490000,12
+152,RM0152,realme Ultra 11,realme,Điện thoại cao cấp,22990000,12
+153,RM0153,realme Pin dự phòng Pro2,realme,Phụ kiện,120000,6
+154,RM0154,realme Pro+ 11,realme,Điện thoại cao cấp,22990000,12
+155,RM0155,realme Pro+ 16,realme,Điện thoại cao cấp,27990000,12
+156,RM0156,realme Pro Max 12,realme,Điện thoại cao cấp,27990000,12
+157,RM0157,realme Plus 8,realme,Điện thoại tầm trung,7990000,12
+158,RM0158,realme Y2,realme,Điện thoại phổ thông,2990000,12
+159,RM0159,realme Tab S7,realme,Máy tính bảng,12990000,12
+160,RM0160,realme Y6,realme,Điện thoại phổ thông,2990000,12
+161,VV0161,vivo Pro Max 11,vivo,Điện thoại cao cấp,18990000,12
+162,VV0162,vivo Pro+ 13,vivo,Điện thoại cao cấp,18990000,12
+163,VV0163,vivo Pro+ 13,vivo,Điện thoại cao cấp,18990000,12
+164,VV0164,vivo C2,vivo,Điện thoại phổ thông,3990000,12
+165,VV0165,vivo Note 8,vivo,Điện thoại tầm trung,6490000,12
+166,VV0166,vivo Go3,vivo,Điện thoại phổ thông,3990000,12
+167,VV0167,vivo Pro+ 14,vivo,Điện thoại cao cấp,36990000,12
+168,VV0168,vivo Pro Max 14,vivo,Điện thoại cao cấp,27990000,12
+169,VV0169,vivo Y7,vivo,Điện thoại phổ thông,3490000,12
+170,VV0170,vivo Ultra 12,vivo,Điện thoại cao cấp,18990000,12
+171,VV0171,vivo Go6,vivo,Điện thoại phổ thông,2490000,12
+172,VV0172,vivo Y4,vivo,Điện thoại phổ thông,3490000,12
+173,VV0173,vivo Pro+ 16,vivo,Điện thoại cao cấp,18990000,12
+174,VV0174,vivo Neo 11,vivo,Điện thoại tầm trung,4990000,12
+175,VV0175,vivo C2,vivo,Điện thoại phổ thông,2490000,12
+176,VV0176,vivo Pro Max 11,vivo,Điện thoại cao cấp,31990000,12
+177,VV0177,vivo Pro+ 15,vivo,Điện thoại cao cấp,36990000,12
+178,VV0178,vivo Lite7,vivo,Điện thoại phổ thông,2990000,12
+179,VV0179,vivo Ốp lưng B7,vivo,Phụ kiện,320000,6
+180,VV0180,vivo Lite4,vivo,Điện thoại phổ thông,2990000,12
+181,VV0181,vivo S 11,vivo,Điện thoại tầm trung,4990000,12
+182,VV0182,vivo Pro Max 12,vivo,Điện thoại cao cấp,36990000,12
+183,VV0183,vivo Y7,vivo,Điện thoại phổ thông,2490000,12
+184,VV0184,vivo Note 11,vivo,Điện thoại tầm trung,6490000,12
+185,VV0185,vivo Go2,vivo,Điện thoại phổ thông,2990000,12
+186,VV0186,vivo S 12,vivo,Điện thoại tầm trung,9490000,12
+187,VV0187,vivo Note 10,vivo,Điện thoại tầm trung,4990000,12
+188,VV0188,vivo Tab S9,vivo,Máy tính bảng,9990000,12
+189,VV0189,vivo C4,vivo,Điện thoại phổ thông,1890000,12
+190,VV0190,vivo Go5,vivo,Điện thoại phổ thông,2990000,12
+191,VV0191,vivo Neo 10,vivo,Điện thoại tầm trung,4990000,12
+192,VV0192,vivo S 10,vivo,Điện thoại tầm trung,7990000,12
+193,VV0193,vivo Pro Max 16,vivo,Điện thoại cao cấp,36990000,12
+194,VV0194,vivo Neo 13,vivo,Điện thoại tầm trung,6490000,12
+195,VV0195,vivo Go4,vivo,Điện thoại phổ thông,2490000,12
+196,VV0196,vivo Note 9,vivo,Điện thoại tầm trung,4990000,12
+197,VV0197,vivo Sạc nhanh B6,vivo,Phụ kiện,750000,6
+198,VV0198,vivo Note 8,vivo,Điện thoại tầm trung,11990000,12
+199,VV0199,vivo Pro Max 14,vivo,Điện thoại cao cấp,36990000,12
+200,VV0200,vivo Pro Max 16,vivo,Điện thoại cao cấp,27990000,12
+201,AP0201,Apple S 10,Apple,Điện thoại tầm trung,4990000,12
+202,AP0202,Apple S 14,Apple,Điện thoại tầm trung,11990000,12
+203,AP0203,Apple Pro Max 16,Apple,Điện thoại cao cấp,27990000,12
+204,AP0204,Apple Plus 10,Apple,Điện thoại tầm trung,9490000,12
+205,AP0205,Apple S 14,Apple,Điện thoại tầm trung,6490000,12
+206,AP0206,Apple Cáp Type-C Pro2,Apple,Phụ kiện,590000,6
+207,AP0207,Apple Go4,Apple,Điện thoại phổ thông,3990000,12
+208,AP0208,Apple Sạc nhanh Lite8,Apple,Phụ kiện,120000,6
+209,AP0209,Apple Tab S7,Apple,Máy tính bảng,9990000,12
+210,AP0210,Apple Note 10,Apple,Điện thoại tầm trung,6490000,12
+211,AP0211,Apple Neo 14,Apple,Điện thoại tầm trung,6490000,12
+212,AP0212,Apple S 10,Apple,Điện thoại tầm trung,7990000,12
+213,AP0213,Apple Ultra 11,Apple,Điện thoại cao cấp,18990000,12
+214,AP0214,Apple Pro Max 11,Apple,Điện thoại cao cấp,27990000,12
+215,AP0215,Apple Pro+ 11,Apple,Điện thoại cao cấp,27990000,12
+216,AP0216,Apple Go3,Apple,Điện thoại phổ thông,3990000,12
+217,AP0217,Apple Ultra 14,Apple,Điện thoại cao cấp,22990000,12
+218,AP0218,Apple Lite9,Apple,Điện thoại phổ thông,1890000,12
+219,AP0219,Apple Note 13,Apple,Điện thoại tầm trung,7990000,12
+220,AP0220,Apple Tab A8,Apple,Máy tính bảng,12990000,12
+221,AP0221,Apple Pro Max 11,Apple,Điện thoại cao cấp,18990000,12
+222,AP0222,Apple Ultra 12,Apple,Điện thoại cao cấp,36990000,12
+223,AP0223,Apple Tab M5,Apple,Máy tính bảng,5990000,12
+224,AP0224,Apple Plus 10,Apple,Điện thoại tầm trung,7990000,12
+225,AP0225,Apple Pro+ 13,Apple,Điện thoại cao cấp,27990000,12
+226,AP0226,Apple Pro Max 11,Apple,Điện thoại cao cấp,18990000,12
+227,AP0227,Apple Tab A10,Apple,Máy tính bảng,9990000,12
+228,AP0228,Apple Go5,Apple,Điện thoại phổ thông,2490000,12
+229,AP0229,Apple Cáp Type-C B6,Apple,Phụ kiện,250000,6
+230,AP0230,Apple Ốp lưng Lite7,Apple,Phụ kiện,250000,6
+231,AP0231,Apple Ultra 12,Apple,Điện thoại cao cấp,36990000,12
+232,AP0232,Apple Tai nghe Lite8,Apple,Phụ kiện,750000,6
+233,AP0233,Apple Tai nghe B8,Apple,Phụ kiện,250000,6
+234,AP0234,Apple Plus 9,Apple,Điện thoại tầm trung,7990000,12
+235,AP0235,Apple C3,Apple,Điện thoại phổ thông,3490000,12
+236,AP0236,Apple Note 12,Apple,Điện thoại tầm trung,7990000,12
+237,AP0237,Apple Note 11,Apple,Điện thoại tầm trung,9490000,12
+238,AP0238,Apple Ultra 15,Apple,Điện thoại cao cấp,36990000,12
+239,AP0239,Apple S 8,Apple,Điện thoại tầm trung,6490000,12
+240,AP0240,Apple Tab M9,Apple,Máy tính bảng,5990000,12
+241,NK0241,Nokia Tab A7,Nokia,Máy tính bảng,4590000,12
+242,NK0242,Nokia Tab S10,Nokia,Máy tính bảng,5990000,12
+243,NK0243,Nokia Pro Max 11,Nokia,Điện thoại cao cấp,18990000,12
+244,NK0244,Nokia Pro Max 16,Nokia,Điện thoại cao cấp,31990000,12
+245,NK0245,Nokia Note 11,Nokia,Điện thoại tầm trung,9490000,12
+246,NK0246,Nokia Cáp Type-C Lite7,Nokia,Phụ kiện,750000,6
+247,NK0247,Nokia Plus 11,Nokia,Điện thoại tầm trung,11990000,12
+248,NK0248,Nokia Note 9,Nokia,Điện thoại tầm trung,11990000,12
+249,NK0249,Nokia Tai nghe A3,Nokia,Phụ kiện,320000,6
+250,NK0250,Nokia Ốp lưng Pro2,Nokia,Phụ kiện,190000,6
+251,NK0251,Nokia Ultra 16,Nokia,Điện thoại cao cấp,27990000,12
+252,NK0252,Nokia Sạc nhanh Lite7,Nokia,Phụ kiện,250000,6
+253,NK0253,Nokia Go3,Nokia,Điện thoại phổ thông,1890000,12
+254,NK0254,Nokia S 13,Nokia,Điện thoại tầm trung,7990000,12
+255,NK0255,Nokia Pro+ 16,Nokia,Điện thoại cao cấp,27990000,12
+256,NK0256,Nokia Sạc nhanh B7,Nokia,Phụ kiện,590000,6
+257,NK0257,Nokia S 12,Nokia,Điện thoại tầm trung,11990000,12
+258,NK0258,Nokia Tab S12,Nokia,Máy tính bảng,5990000,12
+259,NK0259,Nokia Pro+ 16,Nokia,Điện thoại cao cấp,36990000,12
+260,NK0260,Nokia Pro Max 16,Nokia,Điện thoại cao cấp,18990000,12
+261,NK0261,Nokia Plus 11,Nokia,Điện thoại tầm trung,9490000,12
+262,NK0262,Nokia Tai nghe Lite3,Nokia,Phụ kiện,750000,6
+263,NK0263,Nokia S 8,Nokia,Điện thoại tầm trung,4990000,12
+264,NK0264,Nokia Tab M7,Nokia,Máy tính bảng,9990000,12
+265,NK0265,Nokia Pro+ 12,Nokia,Điện thoại cao cấp,31990000,12
+266,NK0266,Nokia Sạc nhanh Pro2,Nokia,Phụ kiện,120000,6
+267,NK0267,Nokia Note 11,Nokia,Điện thoại tầm trung,9490000,12
+268,NK0268,Nokia Ốp lưng A6,Nokia,Phụ kiện,450000,6
+269,NK0269,Nokia Ốp lưng B9,Nokia,Phụ kiện,450000,6
+270,NK0270,Nokia Tab S9,Nokia,Máy tính bảng,5990000,12
+271,NK0271,Nokia Note 14,Nokia,Điện thoại tầm trung,6490000,12
+272,NK0272,Nokia Plus 13,Nokia,Điện thoại tầm trung,9490000,12
+273,NK0273,Nokia Note 11,Nokia,Điện thoại tầm trung,11990000,12
+274,NK0274,Nokia Note 13,Nokia,Điện thoại tầm trung,11990000,12
+275,NK0275,Nokia Tab A6,Nokia,Máy tính bảng,5990000,12
+276,NK0276,Nokia Plus 12,Nokia,Điện thoại tầm trung,6490000,12
+277,NK0277,Nokia Plus 11,Nokia,Điện thoại tầm trung,6490000,12
+278,NK0278,Nokia S 9,Nokia,Điện thoại tầm trung,6490000,12
+279,NK0279,Nokia Tab A6,Nokia,Máy tính bảng,4590000,12
+280,NK0280,Nokia Tab M10,Nokia,Máy tính bảng,4590000,12
+281,TC0281,TECNO Lite8,TECNO,Điện thoại phổ thông,3990000,12
+282,TC0282,TECNO Neo 13,TECNO,Điện thoại tầm trung,7990000,12
+283,TC0283,TECNO S 12,TECNO,Điện thoại tầm trung,9490000,12
+284,TC0284,TECNO Y9,TECNO,Điện thoại phổ thông,2990000,12
+285,TC0285,TECNO C5,TECNO,Điện thoại phổ thông,2490000,12
+286,TC0286,TECNO Lite6,TECNO,Điện thoại phổ thông,3490000,12
+287,TC0287,TECNO Plus 11,TECNO,Điện thoại tầm trung,4990000,12
+288,TC0288,TECNO Go3,TECNO,Điện thoại phổ thông,3990000,12
+289,TC0289,TECNO Plus 12,TECNO,Điện thoại tầm trung,11990000,12
+290,TC0290,TECNO Ultra 14,TECNO,Điện thoại cao cấp,18990000,12
+291,TC0291,TECNO C7,TECNO,Điện thoại phổ thông,3490000,12
+292,TC0292,TECNO Neo 9,TECNO,Điện thoại tầm trung,6490000,12
+293,TC0293,TECNO Go7,TECNO,Điện thoại phổ thông,2990000,12
+294,TC0294,TECNO Tab M7,TECNO,Máy tính bảng,5990000,12
+295,TC0295,TECNO Sạc nhanh B5,TECNO,Phụ kiện,750000,6
+296,TC0296,TECNO Pro+ 12,TECNO,Điện thoại cao cấp,22990000,12
+297,TC0297,TECNO Note 9,TECNO,Điện thoại tầm trung,9490000,12
+298,TC0298,TECNO Neo 10,TECNO,Điện thoại tầm trung,6490000,12
+299,TC0299,TECNO Go4,TECNO,Điện thoại phổ thông,3490000,12
+300,TC0300,TECNO Lite3,TECNO,Điện thoại phổ thông,1890000,12
+301,TC0301,TECNO Y3,TECNO,Điện thoại phổ thông,3990000,12
+302,TC0302,TECNO Ultra 11,TECNO,Điện thoại cao cấp,36990000,12
+303,TC0303,TECNO Pro Max 15,TECNO,Điện thoại cao cấp,18990000,12
+304,TC0304,TECNO Note 13,TECNO,Điện thoại tầm trung,7990000,12
+305,TC0305,TECNO Y6,TECNO,Điện thoại phổ thông,1890000,12
+306,TC0306,TECNO Go4,TECNO,Điện thoại phổ thông,1890000,12
+307,TC0307,TECNO Lite2,TECNO,Điện thoại phổ thông,3490000,12
+308,TC0308,TECNO Pro+ 11,TECNO,Điện thoại cao cấp,22990000,12
+309,TC0309,TECNO Ultra 16,TECNO,Điện thoại cao cấp,36990000,12
+310,TC0310,TECNO Tab M5,TECNO,Máy tính bảng,5990000,12
+311,TC0311,TECNO Lite2,TECNO,Điện thoại phổ thông,3990000,12
+312,TC0312,TECNO Note 8,TECNO,Điện thoại tầm trung,4990000,12
+313,TC0313,TECNO Go4,TECNO,Điện thoại phổ thông,2490000,12
+314,TC0314,TECNO Ultra 13,TECNO,Điện thoại cao cấp,27990000,12
+315,TC0315,TECNO Tab A12,TECNO,Máy tính bảng,4590000,12
+316,TC0316,TECNO Lite9,TECNO,Điện thoại phổ thông,2990000,12
+317,TC0317,TECNO Pro Max 15,TECNO,Điện thoại cao cấp,31990000,12
+318,TC0318,TECNO Neo 13,TECNO,Điện thoại tầm trung,7990000,12
+319,TC0319,TECNO C8,TECNO,Điện thoại phổ thông,2990000,12
+320,TC0320,TECNO Sạc nhanh Lite7,TECNO,Phụ kiện,320000,6

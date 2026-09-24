@@ -1,0 +1,25 @@
+store_id,store_code,store_name,thanh_pho,quan_huyen,ngay_khai_truong
+1,MM001,Mekong Mobile Quận 1,TP. Hồ Chí Minh,Quận 1,2020-04-30
+2,MM002,Mekong Mobile Quận 3,TP. Hồ Chí Minh,Quận 3,2015-05-25
+3,MM003,Mekong Mobile Quận 5,TP. Hồ Chí Minh,Quận 5,2020-11-01
+4,MM004,Mekong Mobile Quận 7,TP. Hồ Chí Minh,Quận 7,2023-04-22
+5,MM005,Mekong Mobile Quận 10,TP. Hồ Chí Minh,Quận 10,2022-10-05
+6,MM006,Mekong Mobile Quận 11,TP. Hồ Chí Minh,Quận 11,2021-03-06
+7,MM007,Mekong Mobile Quận Bình Thạnh,TP. Hồ Chí Minh,Quận Bình Thạnh,2018-08-16
+8,MM008,Mekong Mobile Quận Gò Vấp,TP. Hồ Chí Minh,Quận Gò Vấp,2018-06-05
+9,MM009,Mekong Mobile Quận Tân Bình,TP. Hồ Chí Minh,Quận Tân Bình,2021-11-01
+10,MM010,Mekong Mobile Quận Tân Phú,TP. Hồ Chí Minh,Quận Tân Phú,2018-09-25
+11,MM011,Mekong Mobile Quận Phú Nhuận,TP. Hồ Chí Minh,Quận Phú Nhuận,2017-02-06
+12,MM012,Mekong Mobile TP. Thủ Đức,TP. Hồ Chí Minh,TP. Thủ Đức,2019-08-17
+13,MM013,Mekong Mobile Quận 12,TP. Hồ Chí Minh,Quận 12,2018-11-26
+14,MM014,Mekong Mobile Quận Bình Tân,TP. Hồ Chí Minh,Quận Bình Tân,2018-04-02
+15,MM015,Mekong Mobile Ninh Kiều,Cần Thơ,Ninh Kiều,2016-03-31
+16,MM016,Mekong Mobile Bình Thủy,Cần Thơ,Bình Thủy,2019-05-05
+17,MM017,Mekong Mobile Cái Răng,Cần Thơ,Cái Răng,2018-12-26
+18,MM018,Mekong Mobile Ô Môn,Cần Thơ,Ô Môn,2017-12-26
+19,MM019,Mekong Mobile Thốt Nốt,Cần Thơ,Thốt Nốt,2021-09-05
+20,MM020,Mekong Mobile Phong Điền,Cần Thơ,Phong Điền,2020-01-22
+21,MM021,Mekong Mobile Hoàn Kiếm,Hà Nội,Hoàn Kiếm,2019-03-29
+22,MM022,Mekong Mobile Cầu Giấy,Hà Nội,Cầu Giấy,2019-06-09
+23,MM023,Mekong Mobile Đống Đa,Hà Nội,Đống Đa,2022-02-04
+24,MM024,Mekong Mobile Hai Bà Trưng,Hà Nội,Hai Bà Trưng,2017-05-11
