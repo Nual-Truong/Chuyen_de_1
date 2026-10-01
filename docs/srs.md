@@ -24,8 +24,10 @@
   * *AC1.2 (Ngoại lệ):* GIVEN tháng được chọn chưa có dữ liệu nạp vào kho, WHEN Giám đốc bấm Lọc, THEN hệ thống báo "Chưa có dữ liệu cho kỳ báo cáo này".
 * **US2 (MUST):** Là Giám đốc, tôi muốn xác định các cửa hàng có doanh thu giảm 3 tháng liên tiếp để có biện pháp xử lý.
   * *AC2.1:* GIVEN dữ liệu đã cập nhật, WHEN xem dashboard cảnh báo, THEN hệ thống highlight màu đỏ các cửa hàng có doanh thu Tháng(N) < Tháng(N-1) < Tháng(N-2).
+  * *AC2.2 (Ngoại lệ):* GIVEN cửa hàng mới mở chưa đủ 3 tháng dữ liệu, WHEN xem dashboard cảnh báo, THEN hệ thống ẩn cửa hàng này khỏi danh sách cảnh báo.
 * **US3 (MUST):** Là Trưởng phòng Marketing, tôi muốn tính tỉ lệ khách quay lại mua lần hai để đánh giá mức độ trung thành.
-  * *AC3.1:* GIVEN tập khách hàng, WHEN xem báo cáo Retention, THEN hiển thị biểu đồ tròn biểu diễn % khách có >= 2 đơn hàng.
+  * *AC3.1:* GIVEN tập khách hàng hợp lệ, WHEN xem báo cáo Retention, THEN hiển thị biểu đồ tròn biểu diễn % khách có >= 2 đơn hàng.
+  * *AC3.2 (Ngoại lệ):* GIVEN các đơn hàng không thu thập được số điện thoại chuẩn, WHEN hệ thống tính toán, THEN hệ thống tự động loại bỏ các đơn này khỏi mẫu số chung để đảm bảo tỉ lệ chính xác.
 * **US4 (SHOULD):** Là Quản lý sản phẩm, tôi muốn phân tích doanh thu theo nhóm sản phẩm để tối ưu danh mục nhập hàng.
 * **US5 (SHOULD):** Là Data Engineer, tôi muốn xem danh sách các dòng dữ liệu bị loại (reject) khi nạp vào kho để xử lý lỗi đầu vào.
 * **US6 (COULD):** Là Giám đốc, tôi muốn lọc báo cáo doanh thu theo khu vực địa lý (Quận/Huyện).
