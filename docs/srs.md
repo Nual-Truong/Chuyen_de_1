@@ -112,3 +112,10 @@ File `wireframe.png` cung cấp thiết kế cấu trúc (low-fidelity) cho 3 v�
 1. **Khung 1 - Dashboard Tổng Doanh Thu (Phục vụ US1):** Sử dụng biểu đồ cột (Bar Chart) để so sánh trực quan doanh thu giữa các cửa hàng trong một kỳ báo cáo cụ thể. Nguồn dữ liệu được tính toán dựa trên truy vấn `SUM(thanh_tien)` kết hợp giữa bảng Fact và bảng Dimension Cửa hàng.
 2. **Khung 2 - Bảng Cảnh Báo Giảm Doanh Thu (Phục vụ US2):** Bố trí dưới dạng bảng ma trận (Table). Các dòng dữ liệu của cửa hàng có doanh thu giảm liên tục trong 3 tháng sẽ được hệ thống highlight (làm nổi bật) để Giám đốc nhận diện rủi ro tức thời.
 3. **Khung 3 - Biểu đồ Tỉ Lệ Khách Quay Lại (Phục vụ US3):** Sử dụng biểu đồ tròn (Pie Chart) biểu diễn tỉ trọng tập khách hàng. Hệ thống đếm phân biệt các đơn hàng `COUNT(DISTINCT order_key)` nhóm theo định danh số điện thoại khách hàng (đã được che bảo mật) để tính ra tỉ lệ Retention.
+
+### Mô tả Mô hình Dữ liệu (Star Schema)
+Sơ đồ `erd.drawio` được thiết kế theo Lược đồ hình sao (Star Schema) chủ ý phi chuẩn hóa để tối ưu hóa tốc độ đọc và khả năng tổng hợp nhiều chiều thay vì chuẩn hóa 3NF.
+
+* **Mức chi tiết (Grain):** Một dòng trong bảng `fact_sales` đại diện cho MỘT SẢN PHẨM nằm trong MỘT ĐƠN HÀNG được bán tại MỘT CỬA HÀNG vào MỘT NGÀY.
+* **Xử lý bản ghi mồ côi:** Mọi bảng Dimension đều được thiết kế chừa sẵn một bản ghi Unknown (`key = -1`) để chứa các fact có dữ liệu nguồn không khớp (VD: mã cửa hàng bị sai trong file CSV không tìm thấy ở bảng chi nhánh).
+* **Dimension thay đổi theo thời gian (SCD):** Quyết định chọn **SCD Loại 2** cho bảng `dim_customer` (bằng cách thêm cột `hieu_luc_tu`, `hieu_luc_den`, `la_ban_ghi_hien_tai`). Lý do: Cần tính chính xác tỉ lệ khách hàng quay lại (US3) dựa trên phân khúc/thông tin khách hàng đúng TẠI THỜI ĐIỂM mua hàng chứ không ghi đè mất lịch sử. Đánh đổi: Bảng `dim_customer` tốn nhiều dung lượng lưu trữ hơn và truy vấn phải kẹp thêm điều kiện lọc khoảng thời gian hiệu lực.
