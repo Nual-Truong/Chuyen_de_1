@@ -49,7 +49,7 @@
 ## 4. Yêu cầu phi chức năng (NFR)
 * **NFR01 (Hiệu năng):** Với khối lượng 100.000 dòng dữ liệu trong kho, Dashboard báo cáo phải tải xong và hiển thị hoàn chỉnh trong dưới **3 giây**.
 * **NFR02 (Sẵn sàng/Bảo trì):** Quá trình ETL nạp dữ liệu từ các file CSV vào Kho dữ liệu (chạy batch ban đêm) phải hoàn thành trong thời gian tối đa là **2 giờ** đồng hồ.
-* **NFR03 (Bảo mật):** Nhằm bảo mật thông tin, hệ thống tự động che giấu **4 số cuối** điện thoại của khách hàng (Data Masking) ngay tại tầng ETL trước khi đưa lên báo cáo phân tích (Ví dụ: 0901***567).
+* **NFR03 (Bảo mật):** Nhằm bảo mật thông tin, hệ thống tự động che giấu **4 số cuối** điện thoại của khách hàng (Data Masking) ngay tại tầng ETL trước khi đưa lên báo cáo phân tích (Ví dụ: 09011****).
 
 ## 5. Ràng buộc và quy tắc nghiệp vụ
 * **QT-01:** Một đơn hàng hợp lệ được ghi nhận doanh thu bắt buộc phải có đầy đủ mã cửa hàng, mã sản phẩm và ngày giao dịch.
@@ -65,6 +65,8 @@
 | FR03: Phân tích khách quay lại | US3 | UC3: Phân tích Retention | MUST |
 | FR04: Doanh thu theo nhóm SP | US4 | UC4: Phân tích theo sản phẩm | SHOULD |
 | FR05: Ghi nhận lỗi ETL | US5 | UC5: Xem log lỗi nạp dữ liệu | SHOULD |
+| FR01: Lọc theo khu vực địa lý	| US6	| UC1: Xem báo cáo doanh thu	COULD |
+| FR03: Phân tích khách quay lại | US7	| UC6: Xuất Excel dữ liệu	COULD |
 
 ---
 
