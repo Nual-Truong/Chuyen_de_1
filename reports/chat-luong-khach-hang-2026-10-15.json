@@ -1,0 +1,45 @@
+{
+    "batch_id": "khach-hang-2026-10-15",
+    "thoi_gian": "2026-10-15T16:58:14.968821",
+    "tong_so_dong_vao": 3,
+    "so_dong_sach": 2,
+    "so_dong_reject": 1,
+    "chi_tiet_kiem_tra": [
+        {
+            "ma": "CL1",
+            "ten": "Số điện thoại chuẩn hoá được",
+            "so_dong_kiem": 3,
+            "so_dong_loi": 0,
+            "ti_le_loi": 0.0,
+            "nguong_cho_phep": 10.0,
+            "ket_luan": "ĐẠT"
+        },
+        {
+            "ma": "CL2",
+            "ten": "Ngày đọc được theo một trong ba khuôn",
+            "so_dong_kiem": 3,
+            "so_dong_loi": 0,
+            "ti_le_loi": 0.0,
+            "nguong_cho_phep": 1.0,
+            "ket_luan": "ĐẠT"
+        },
+        {
+            "ma": "CL3",
+            "ten": "thanh_tien = so_luong x don_gia",
+            "so_dong_kiem": 3,
+            "so_dong_loi": 1,
+            "ti_le_loi": 33.33,
+            "nguong_cho_phep": 2.0,
+            "ket_luan": "KHÔNG ĐẠT"
+        },
+        {
+            "ma": "CL4",
+            "ten": "Cặp (ma_cua_hang, ma_don) là duy nhất",
+            "so_dong_kiem": 3,
+            "so_dong_loi": 2,
+            "ti_le_loi": 66.67,
+            "nguong_cho_phep": 0.0,
+            "ket_luan": "KHÔNG ĐẠT"
+        }
+    ]
+}

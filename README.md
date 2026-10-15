@@ -33,3 +33,10 @@ git commit -m "chore(init): khoi tao cau truc thu muc, gitignore va env.example"
 git push origin main
 
 # 7. Kiểm chứng: mở repo trên GitHub, phải thấy đủ 4 thư mục và 3 file cấu hình
+
+# 8. Từng bước chạy file
+
+## Hướng dẫn chạy Pipeline
+
+- Chạy Pipeline làm sạch và nạp dữ liệu: `python -m src.pipeline`
+- Chạy Unit Test kiểm tra logic: `pytest -q`
