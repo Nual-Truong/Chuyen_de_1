@@ -34,9 +34,19 @@ git push origin main
 
 # 7. Kiểm chứng: mở repo trên GitHub, phải thấy đủ 4 thư mục và 3 file cấu hình
 
-# 8. Từng bước chạy file
+## 8. Yêu cầu môi trường
 
-## Hướng dẫn chạy Pipeline
+- Python 3.10 trở lên.
+- Quản lý gói: `pip`.
+- Các thư viện bắt buộc (liệt kê trong `requirements.txt`): `pandas`, `sqlalchemy`, `pytest`, `pyyaml`.
+- Cơ sở dữ liệu: `SQLite` (Tích hợp sẵn, file `.db` sẽ được tự động tạo trong thư mục `data/` khi chạy).
 
-- Chạy Pipeline làm sạch và nạp dữ liệu: `python -m src.pipeline`
-- Chạy Unit Test kiểm tra logic: `pytest -q`
+## 9. Lệnh chạy toàn bộ dự án (One-click Run)
+
+Để cài đặt môi trường, chạy kiểm thử logic và thực thi Pipeline từ A-Z, bạn chỉ cần mở Terminal tại thư mục gốc của dự án và chạy **1 chuỗi lệnh duy nhất** sau:
+
+**Đối với Windows (Command Prompt / PowerShell):**
+
+```bash
+pip install -r requirements.txt && pytest -q && python -m src.pipeline
+```
