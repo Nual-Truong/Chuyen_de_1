@@ -1,4 +1,6 @@
 import os
+from typing import Optional
+
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -14,7 +16,7 @@ def lay_engine():
     return create_engine('sqlite:///data/mekong_dw.db', pool_pre_ping=True)
 
 @st.cache_data(ttl=300)
-def doc_du_lieu(sql: str, tham: dict = None):
+def doc_du_lieu(sql: str, tham: Optional[dict] = None):
     with lay_engine().connect() as conn:
         return pd.read_sql(text(sql), conn, params=tham or {})
 
@@ -23,6 +25,20 @@ st.markdown('### 📅 Bộ lọc thời gian')
 c1, c2 = st.columns(2)
 tu_ngay = c1.date_input('Từ ngày', pd.Timestamp('2024-01-01'))
 den_ngay = c2.date_input('Đến ngày', pd.Timestamp('2026-12-31'))
+
+# ==========================================
+# CHỐT CHẶN BẢO VỆ VÀ CHUẨN HÓA THỜI GIAN
+# ==========================================
+if not tu_ngay or not den_ngay:
+    st.warning('Vui lòng chọn đầy đủ "Từ ngày" và "Đến ngày" để xem báo cáo.')
+    st.stop()
+
+# Ép kiểu an toàn tuyệt đối qua Pandas thay vì dùng strftime trực tiếp
+tu_sql = pd.to_datetime(tu_ngay).strftime('%Y-%m-%d')
+den_sql = pd.to_datetime(den_ngay).strftime('%Y-%m-%d')
+
+tu_hien_thi = pd.to_datetime(tu_ngay).strftime('%d/%m/%Y')
+den_hien_thi = pd.to_datetime(den_ngay).strftime('%d/%m/%Y')
 
 # ==========================================
 # TRẠNG THÁI 1: ĐANG TẢI (LOADING)
@@ -39,7 +55,8 @@ with st.spinner('Đang truy vấn kho dữ liệu...'):
             GROUP BY ds.ten_cua_hang
             ORDER BY tong_doanh_thu DESC
         """
-        df_doanh_thu = doc_du_lieu(sql_doanh_thu, {'tu': tu_ngay.strftime('%Y-%m-%d'), 'den': den_ngay.strftime('%Y-%m-%d')})
+        # Truyền biến tu_sql, den_sql đã được chuẩn hóa an toàn
+        df_doanh_thu = doc_du_lieu(sql_doanh_thu, {'tu': tu_sql, 'den': den_sql})
         
         # Khung 2: Doanh thu theo nhóm sản phẩm (US4)
         sql_san_pham = """
@@ -51,7 +68,7 @@ with st.spinner('Đang truy vấn kho dữ liệu...'):
             GROUP BY dp.nhom_san_pham
             ORDER BY tong_doanh_thu DESC
         """
-        df_san_pham = doc_du_lieu(sql_san_pham, {'tu': tu_ngay.strftime('%Y-%m-%d'), 'den': den_ngay.strftime('%Y-%m-%d')})
+        df_san_pham = doc_du_lieu(sql_san_pham, {'tu': tu_sql, 'den': den_sql})
 
         # Khung 3: Tỉ lệ khách hàng quay lại mua hàng (US3 - Retention)
         sql_retention = """
@@ -70,9 +87,7 @@ with st.spinner('Đang truy vấn kho dữ liệu...'):
         df_retention = doc_du_lieu(sql_retention)
 
     except Exception as e:
-        # ==========================================
         # TRẠNG THÁI 3: LỖI (ERROR)
-        # ==========================================
         st.error('Không đọc được dữ liệu từ kho dữ liệu. Kiểm tra kết nối rồi thử lại.')
         st.caption(f'Chi tiết kỹ thuật: {type(e).__name__}')
         st.stop()
@@ -85,14 +100,12 @@ if df_doanh_thu.empty:
     st.stop()
 
 # ==========================================
-# HIỂN THỊ 3 KHUNG DASHBOARD (WIREFRAME 3 MÀN HÌNH)
+# HIỂN THỊ 3 KHUNG DASHBOARD
 # ==========================================
 st.markdown('---')
-
 col1, col2 = st.columns(2)
 
 with col1:
-    # --- Khung 1: Bar Chart Doanh Thu ---
     st.subheader('1. Tổng doanh thu theo cửa hàng')
     tb_doanh_thu = df_doanh_thu['tong_doanh_thu'].mean()
     fig1 = px.bar(
@@ -103,10 +116,10 @@ with col1:
     fig1.add_vline(x=tb_doanh_thu, line_dash='dash', line_color='red',
                    annotation_text=f'Trung bình: {tb_doanh_thu:,.0f} VNĐ')
     st.plotly_chart(fig1, use_container_width=True)
-    st.caption(f'Nguồn: fact_sales · {len(df_doanh_thu)} cửa hàng · Từ {tu_ngay.strftime("%d/%m/%Y")} đến {den_ngay.strftime("%d/%m/%Y")}')
+    # Dùng biến tu_hien_thi, den_hien_thi thay vì gọi hàm strftime phức tạp
+    st.caption(f'Nguồn: fact_sales · {len(df_doanh_thu)} cửa hàng · Từ {tu_hien_thi} đến {den_hien_thi}')
 
 with col2:
-    # --- Khung 2: Bar Chart Nhóm Sản Phẩm ---
     st.subheader('2. Doanh thu theo nhóm sản phẩm')
     tb_sp = df_san_pham['tong_doanh_thu'].mean()
     fig2 = px.bar(
@@ -118,11 +131,9 @@ with col2:
     fig2.add_vline(x=tb_sp, line_dash='dot', line_color='orange',
                    annotation_text=f'Trung bình: {tb_sp:,.0f} VNĐ')
     st.plotly_chart(fig2, use_container_width=True)
-    st.caption(f'Nguồn: fact_sales và dim_product · Khoảng thời gian đã chọn')
+    st.caption(f'Nguồn: fact_sales và dim_product · Từ {tu_hien_thi} đến {den_hien_thi}')
 
 st.markdown('---')
-
-# --- Khung 3: Pie Chart Tỉ Lệ Khách Quay Lại (Retention Rate - US3) ---
 st.subheader('3. Tỉ lệ khách hàng quay lại mua hàng (Retention Rate)')
 if not df_retention.empty:
     fig3 = px.pie(
@@ -132,6 +143,6 @@ if not df_retention.empty:
         color_discrete_sequence=px.colors.qualitative.Pastel
     )
     st.plotly_chart(fig3, use_container_width=True)
-    st.caption('Nguồn: fact_sales (Đếm phân biệt đơn hàng nhóm theo định danh khách hàng đã che bảo mật)')
+    st.caption('Nguồn: fact_sales (Đếm phân biệt đơn hàng nhóm theo khách hàng)')
 else:
     st.warning('Chưa có đủ dữ liệu để tính tỉ lệ khách quay lại.')
