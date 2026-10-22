@@ -2,8 +2,9 @@ import argparse
 import datetime
 import logging
 import os
+import pathlib
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 
 from src.extract.read_sources import (
     doc_khach_hang, doc_don_hang, doc_chi_tiet_don_hang, doc_san_pham, doc_cua_hang
@@ -14,6 +15,27 @@ from src.transform.rules import doc_ngay
 from src.quality import checks
 from src.load.load_staging import ghi_lo, ghi_reject, ghi_bao_cao
 from src.load.load_warehouse import nap_kho_du_lieu
+
+def khoi_tao_database_tu_sql(engine):
+    """Tự động đọc và thực thi các file SQL trong thư mục sql/ để dựng cấu trúc bảng"""
+    sql_dir = pathlib.Path("sql")
+    if not sql_dir.exists():
+        return
+    
+    # Sắp xếp thứ tự chạy các file sql theo tiền tố số
+    sql_files = sorted(sql_dir.glob("*.sql"))
+    with engine.begin() as conn:
+        for sql_file in sql_files:
+            logging.info(f"Đang thực thi script SQL: {sql_file.name}")
+            script = sql_file.read_text(encoding='utf-8')
+            # Chia nhỏ các lệnh theo dấu chấm phẩy (;) nếu có nhiều lệnh trong 1 file
+            for statement in script.split(';'):
+                if statement.strip():
+                    try:
+                        conn.execute(text(statement))
+                    except Exception as e:
+                        # Bỏ qua lỗi nhỏ nếu bảng đã tồn tại khi chạy lại
+                        pass
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Mekong Mobile ETL Pipeline')
@@ -26,13 +48,11 @@ def main():
     os.makedirs('reports', exist_ok=True)
     os.makedirs('data', exist_ok=True)
 
-    # Sinh mã lô dựa theo phạm vi ngày để chạy lại cùng phạm vi không bị nhân đôi lô
     if args.tu_ngay and args.den_ngay:
         batch_id = f"lo-{args.tu_ngay}-{args.den_ngay}"
     else:
         batch_id = "lo-toan-bo"
 
-    # Cấu hình ghi file log vào reports/
     log_file = f"reports/run_{batch_id}.log"
     logging.basicConfig(
         level=logging.INFO,
@@ -46,6 +66,9 @@ def main():
     logging.info(f"=== Bắt đầu chạy Pipeline ETL - Mã lô: {batch_id} ===")
     db_url = os.environ.get('DWH_URL', 'sqlite:///data/mekong_dw.db')
     engine = create_engine(db_url)
+
+    # BƯỚC 0: Khởi tạo cấu trúc bảng từ các file SQL trong thư mục sql/
+    khoi_tao_database_tu_sql(engine)
 
     # 1. EXTRACT
     data_dir = os.environ.get('DATA_DIR', 'dataset')
@@ -63,7 +86,6 @@ def main():
     df_cus_sach, df_rej_cus = lam_sach_khach_hang(df_cus_tho)
     df_ord_sach, df_itm_sach, df_rej_ord = lam_sach_don_hang(df_ord_tho, df_itm_tho)
 
-    # Lọc theo tham số ngày nếu người dùng truyền vào
     if args.tu_ngay:
         df_ord_sach = df_ord_sach[df_ord_sach['ngay_chuan'].astype(str) >= args.tu_ngay]
     if args.den_ngay:
