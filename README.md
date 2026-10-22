@@ -48,5 +48,7 @@ git push origin main
 **Đối với Windows (Command Prompt / PowerShell):**
 
 ```bash
-pip install -r requirements.txt && pytest -q && python -m src.pipeline
+pip install -r requirements.txt; pytest -q; python -m src.pipeline; streamlit run dashboard/app.py
 ```
+
+# pip install -r requirements.txt && pytest -q && python -m src.pipeline && streamlit run dashboard/app.py (linux)

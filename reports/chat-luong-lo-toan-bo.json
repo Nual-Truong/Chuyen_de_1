@@ -1,0 +1,54 @@
+{
+    "batch_id": "lo-toan-bo",
+    "thoi_gian": "2026-10-22T12:12:29.832743",
+    "tong_so_dong_vao": 128734,
+    "so_dong_sach": 128100,
+    "so_dong_reject": 634,
+    "chi_tiet_kiem_tra": [
+        {
+            "ma": "CL1",
+            "ten": "Số điện thoại chuẩn hoá được",
+            "so_dong_kiem": 67037,
+            "so_dong_loi": 0,
+            "ti_le_loi": 0.0,
+            "nguong_cho_phep": 10.0,
+            "ket_luan": "ĐẠT"
+        },
+        {
+            "ma": "CL2",
+            "ten": "Ngày đọc được theo một trong ba khuôn",
+            "so_dong_kiem": 26000,
+            "so_dong_loi": 114,
+            "ti_le_loi": 0.44,
+            "nguong_cho_phep": 1.0,
+            "ket_luan": "ĐẠT"
+        },
+        {
+            "ma": "CL3",
+            "ten": "thanh_tien = so_luong x don_gia",
+            "so_dong_kiem": 35697,
+            "so_dong_loi": 520,
+            "ti_le_loi": 1.46,
+            "nguong_cho_phep": 2.0,
+            "ket_luan": "ĐẠT"
+        },
+        {
+            "ma": "CL4",
+            "ten": "Cặp (ma_cua_hang, ma_don) là duy nhất",
+            "so_dong_kiem": 25886,
+            "so_dong_loi": 0,
+            "ti_le_loi": 0.0,
+            "nguong_cho_phep": 0.0,
+            "ket_luan": "ĐẠT"
+        },
+        {
+            "ma": "CL5",
+            "ten": "Mỗi dòng hàng trỏ về một đơn hàng có thật",
+            "so_dong_kiem": 35177,
+            "so_dong_loi": 35177,
+            "ti_le_loi": 100.0,
+            "nguong_cho_phep": 0.0,
+            "ket_luan": "KHÔNG ĐẠT"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+2026-10-22 12:12:25,376 [INFO] === Bắt đầu chạy Pipeline ETL - Mã lô: lo-toan-bo ===
+2026-10-22 12:12:30,631 [INFO] Staging & Reject: Đã lưu 634 dòng lỗi vào reject_rows.
+2026-10-22 12:12:30,631 [INFO] Kho dữ liệu Star Schema đã nạp thành công: {'dim_store': 25, 'dim_product': 321, 'dim_date': 793, 'dim_customer': 55385, 'fact_sales': 34973}
+2026-10-22 12:12:30,631 [INFO] === Hoàn tất Pipeline! Báo cáo và log lưu tại thư mục reports/ ===
