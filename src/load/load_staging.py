@@ -9,17 +9,10 @@ def ghi_lo(df_sach, batch_id, engine, table_name='staging_customers'):
 
     df_sach = df_sach.copy()
     df_sach['batch_id'] = batch_id
-
-    # Dùng inspector để kiểm tra xem bảng đã tồn tại trong Database chưa
-    inspector = inspect(engine)
     
+    # ÉP PANDAS XÓA BẢNG CŨ VÀ TẠO LẠI (Sửa if_exists='append' thành 'replace')
     with engine.begin() as conn:
-        # Nếu bảng đã tồn tại (không phải chạy lần đầu), thì xóa dữ liệu lô cũ
-        if inspector.has_table(table_name):
-            conn.execute(text(f"DELETE FROM {table_name} WHERE batch_id = :batch_id"), {"batch_id": batch_id})
-            
-        # Nạp dữ liệu vào bảng (Nếu bảng chưa có, Pandas sẽ tự tạo)
-        df_sach.to_sql(table_name, conn, if_exists='append', index=False)
+        df_sach.to_sql(table_name, conn, if_exists='replace', index=False)
 
 def ghi_reject(df_reject, batch_id, engine, table_name='reject_rows'):
     """Ghi các dòng dữ liệu không xử lý được vào bảng reject kèm lý do."""
@@ -29,14 +22,9 @@ def ghi_reject(df_reject, batch_id, engine, table_name='reject_rows'):
     df_reject = df_reject.copy()
     df_reject['batch_id'] = batch_id
     
-    inspector = inspect(engine)
-    
+    # Với bảng Reject cũng ép tạo lại để test cho mượt
     with engine.begin() as conn:
-        # Tương tự, nếu bảng reject đã có thì xóa dữ liệu lô cũ
-        if inspector.has_table(table_name):
-            conn.execute(text(f"DELETE FROM {table_name} WHERE batch_id = :batch_id"), {"batch_id": batch_id})
-            
-        df_reject.to_sql(table_name, conn, if_exists='append', index=False)
+        df_reject.to_sql(table_name, conn, if_exists='replace', index=False)
 
 def ghi_bao_cao(ket_qua_kiem, batch_id, so_dong_vao, so_reject):
     """Tự động sinh báo cáo chất lượng ra file JSON lưu vào thư mục reports/"""

@@ -1,0 +1,18 @@
+{
+    "batch_id": "khach-hang-2026-10-22",
+    "thoi_gian": "2026-10-22T11:49:09.712566",
+    "tong_so_dong_vao": 67037,
+    "so_dong_sach": 67037,
+    "so_dong_reject": 0,
+    "chi_tiet_kiem_tra": [
+        {
+            "ma": "CL1",
+            "ten": "Số điện thoại chuẩn hoá được",
+            "so_dong_kiem": 67037,
+            "so_dong_loi": 0,
+            "ti_le_loi": 0.0,
+            "nguong_cho_phep": 10.0,
+            "ket_luan": "ĐẠT"
+        }
+    ]
+}
